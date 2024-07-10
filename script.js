@@ -8,7 +8,7 @@ function handleThis(e) {
 }
 
 setInterval(function() {
-    if(window.innerWidth > 500) {
+    if(window.innerWidth > 400) {
         document.getElementsByClassName("menu")[0].style.display = "flex";
     } else {
         document.getElementsByClassName("menu")[0].style.display = "none";
