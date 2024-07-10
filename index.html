@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo" style="border:1px solid white">
+            <img src="Images/bodylogo.png" id="logo">
+        </div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#who-we-are">Who We Are</a>
+            <a href="#meet-the-team">Meet The Team</a>
+            <a href="#classes">Classes</a>
+            <a href="#membership">Membership</a>
+        </div>
+        <button class="contact-button">Contact</button>
+        <div class="cont" onclick="handleThis(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <div class="quote">
+        <img src="Images/lady_work_out.jpg">
+        <div id="motivational-quote">
+            <span>The body<br>
+                <span id="ylw">ACHIEVES</span><br>
+                What The<br>
+                <span id="ylw">MIND</span><br>
+                Believes
+            </span>
+            <button class="begin-button">Begin Your Journey</button>
+        </div>
+    </div>
+
+    <div class="who-we">
+        <h1>WHO WE ARE</h1>
+        <div class="about-us">
+            <img src="Images/img1.jpg">
+            <p>We are Hudson Gym, a community-focused gym dedicated to helping individuals achieve their fitness goals. Our state-of-the-art facilities, experienced trainers, and supportive environment ensure that everyone, from beginners to athletes, can thrive. Join us to transform your health and wellness journey. Together, we build strength and confidence. Your success is our mission.</p>
+        </div>
+    </div>
+    <div class="meet-members">
+        <h1 class="member-heading">MEET OUR MEMBERS</h1>
+        <div class="img-grid">
+            <div class="img-container">
+                <img src="Images/trainer1.jpg"> 
+                <p class="trainer-name">Patricia Johnson</p>
+            </div>
+            <div class="img-container">
+                <img src="Images/trainer2.jpg">
+                <p class="trainer-name">John Anderson</p>
+            </div>
+            <div class="img-container">
+                <img src="Images/trainer3.jpg">
+                <p class="trainer-name">Joseph Moore</p>
+            </div>
+            <div class="img-container">
+                <img src="Images/trainer4.jpg">
+                <p class="trainer-name">Charles Taylor</p>
+            </div>
+            <div class="img-container">
+                <img src="Images/trainer5.jpg">
+                <p class="trainer-name">Richard Wilson</p>
+            </div>
+            <div class="img-container">
+                <img src="Images/trainer6.jpg">
+                <p class="trainer-name">Kevin Gonzalez</p>
+            </div>
+            <div class="img-container">
+                <img src="Images/trainer7.jpg">
+                <p class="trainer-name">Andrew Scott</p>
+            </div>
+            <div class="img-container">
+                <img src="Images/trainer8.jpg">
+                <p class="trainer-name">Edward Mitchell</p>
+            </div>
+        </div>
+    </div>
+    <h1 id="class-gym">FEATURED CLASSES</h1>
+    <div class="classes">
+        <div class="container">
+            <h2>CROSSFIT-BEGINNERS CLASS</h2>
+            <button class="book-btn">BOOK</button>
+        </div>
+        <div class="container">
+            <h2>CROSSFIT-GYMNASTICS</h2>
+            <button class="book-btn">BOOK</button>
+        </div>
+        <div class="container">
+            <h2>CROSSFIT-OLYMPIC LIFTING</h2>
+            <button class="book-btn">BOOK</button>
+        </div>
+        <div class="container">
+            <h2>CROSSFIT-FEMALES ONLY</h2>
+            <button class="book-btn">BOOK</button>
+        </div>
+    </div>
+
+    <h1 class="member-heading">MEMBERSHIP</h1>
+    <div class="membership">
+        <div class="card" >
+            <h2>FLEXI</h2>
+            <h3>$ 9.99 / month</h3>
+            <ul>
+                <li>&#9930 16 Classes Per Month</li>
+                <li>&#9930 4 Classes Per Week</li>
+                <li>&#9930 No Joining Fees</li>
+            </ul>
+            <button id="join-btn">Join Today</button>
+        </div>
+        <div class="card" id="main-card">
+            <h2>ALL ACCESS</h2>
+            <h3>$ 199.99 / month</h3>
+            <ul>
+                <li>&#9930 Unlimited Classes Per Month</li>
+                <li>&#9930 3 Classes Per Day</li>
+                <li>&#9930 No Joining Fees</li>
+            </ul>
+            <button id="join-btn">Join Today</button>
+        </div>
+        <div class="card">
+            <h2>OFF-PEAK</h2>
+            <h3>$ 149.99 / month</h3>
+            <ul>
+                <li>&#9930 20 Classes Per Month</li>
+                <li>&#9930 5 Classes Per Week</li>
+                <li>&#9930 No Joining Fees</li>
+            </ul>
+            <button id="join-btn">Join Today</button>
+        </div>
+    </div>
+    <footer>
+        <div class="address">
+            <p>
+                hudsongym.fitness@gmail.com<br>
+                &#9743 033 2622 6768<br>
+                148/1/1 Rippon Street<br>
+                Kolkata<br>
+                Pin - 700101
+            </p>
+        </div>
+        <div class="imp-links">
+            <a>Careers</a>
+            <a>Contact</a>
+            <a>Privacy Policy</a>
+            <a>Terms & Conditions</a>
+        </div>
+        <div class="experience">
+            <h3>Share Your Experience</h3>
+            <div class="input-expr">
+                <input type="text" placeholder="Write Here">
+                <button>Submit</button>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

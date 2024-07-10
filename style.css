@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0 0 80px 5px whitesmoke;
+}
+
+/* for navbar on mobila screen */
+.cont {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.logo {
+    height: 70px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    font-family: "Bodoni Moda SC", serif;
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+.contact-button {
+    height: 60px;
+    width: 120px;
+    box-shadow: 0 0 10px 5px yellow;
+    background-color: yellow;
+    font-size: 20px;
+    font-family: "Bodoni Moda SC", serif;
+}
+
+.contact-button:hover {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.quote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.quote img {
+    width: 50%;
+}
+
+.quote div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#motivational-quote {
+    font-family: "Anton SC", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    line-height: 60px;
+}
+
+#ylw {
+    font-size: 80px;
+    color: yellow;
+}
+
+.begin-button {
+    margin-top: 10px;
+    height: 60px;
+    width: 200px;
+    box-shadow: 0 0 10px 5px yellow;
+    background-color: yellow;
+    font-size: 20px;
+    font-family: "Anton SC", sans-serif;
+}
+
+.begin-button:hover {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.who-we{
+    width: 90%;
+    border: 3px solid yellow;
+    box-shadow: 20px 20px 10px 10px #585858;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.who-we h1,
+.member-heading,
+#class-gym,
+.membership-heading {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    text-shadow: 5px 7px #585858, 13px 14px rgba(0, 0, 0, 0.75);
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.about-us img {
+    width: 20%;
+}
+
+.about-us p {
+    width: 40%;
+    font-size: 20px;
+    font-family: "Anton SC", sans-serif;
+    color: white;
+}
+.meet-members {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.img-container {
+    position: relative;
+    width: 25%;
+    margin-top: 20px;
+}
+
+.img-container img {
+    width: 90%;
+    height: auto;
+    display: block;    
+}
+
+.trainer-name {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: yellow;
+    width: 90%;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    font-family: "Anton SC", sans-serif;
+    transition: opacity .2s, visibility .2s;
+}
+
+.img-container:hover .trainer-name {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.classes {
+    display: grid;
+    width: 60%;
+    margin-top: 40px;
+    border: 2px solid yellow;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px 450px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    box-shadow: 30px 25px 45px 15px #585858;
+    margin-bottom: 30px;
+}
+
+.container {
+    height: 400px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    justify-content: center;
+    padding: 20px;
+    text-align: right;
+
+}
+
+.container h2 {
+    position: relative;
+    top: 60%;
+}
+
+.container:first-child { 
+    background-image: url("Images/image2.jpg");
+   
+}
+
+.container:nth-child(2) {
+    background-image: url("Images/image3.jpg");
+}
+
+.container:nth-child(3) {
+    background-image: url("Images/image4.jpg");
+}
+
+.container:last-child {
+    background-image: url("Images/image1.jpg");
+}
+
+.book-btn {
+    margin-top: 10px;
+    height: 35px;
+    width: 100px;
+    box-shadow: 0 0 10px 5px yellow;
+    background-color: yellow;
+    font-size: 20px;
+    font-family: "Anton SC", sans-serif;
+    position: relative;
+    top: 60%;
+}
+
+.book-btn:hover {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.membership {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.card h3{
+    font-size: 30px;
+}
+
+#main-card {
+    background-color: white;
+    width: 330px;
+    height: 440px;
+    box-shadow: 0 0 50px 10px yellow;
+    z-index: 1;
+    color: black;
+}
+
+.card ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+#join-btn {
+    margin-top: 10px;
+    height: 40px;
+    width: 150px;
+    background-color: yellow;
+    font-size: 20px;
+    font-family: "Anton SC", sans-serif;
+}
+
+#join-btn:hover {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 0 10px 5px white;
+}
+
+footer {
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.imp-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.imp-links a{
+    cursor: pointer;
+}
+
+.experience h3{
+    font-family: "Anton SC", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    
+}
+
+.input-expr {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-expr input {
+    height: 40px;
+    width: auto;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.input-expr button {
+    font-size: 20px;
+    background-color: #212121;
+    color: white;
+    padding: 5px;
+    height: 40px;
+    font-family: "Anton SC", sans-serif;
+}
+
+.input-expr button:hover {
+    color: black;
+    background-color: yellow;
+    box-shadow: 0 0 10px 5px white;
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .cont {
+        margin-right: 0;
+    }
+
+    .logo {
+        height: 60px;
+        border-radius: 40px;
+    }
+    .logo img {
+        width: 60px;
+    }
+
+    .cont {
+        display: inline-block;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        background-color: yellow;
+        width: 100%;
+        z-index: 1;
+    }
+    .menu a {
+        color: black;
+    }
+
+    .quote {
+        position: relative;
+        height: 500px;
+    }
+
+    .quote img {
+        width: 90%;
+    }
+
+    #motivational-quote {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%, -50%);
+    }
+
+    .about-us {
+        position: relative;
+        height: 500px;
+    }
+    .about-us img {
+        position: absolute;
+        left: 5%;
+        width: 65%;
+        height: auto;
+        opacity: 0.5;
+    }
+
+    .about-us p {
+        position: absolute;
+        top: 45%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 60%;
+        text-align: end;
+    }
+
+
+    .classes {
+        width: 90%;
+        grid-template-rows: 300px 300px;
+    }
+
+    .container {
+        height: 220px;
+        width: 165px;
+    }
+
+    .container h2,
+    .book-btn {
+        top: 0;
+    }
+
+    .who-we h1, 
+    .member-heading, 
+    #class-gym, 
+    .membership-heading {
+        font-size: 50px;
+    }
+
+    .img-container {
+        width: 50%;
+    }
+    
+    .membership {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+    .input-expr input {
+        height: 30px;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .input-expr button {
+        height: 30px;
+        font-size: 20px;
+        padding: 5px;
+    }
+}
